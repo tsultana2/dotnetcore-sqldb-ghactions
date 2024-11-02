@@ -19,6 +19,7 @@ env:
   DATABASE_NAME: demo-webappsql-gh-actions-db-unique-tamanna                   # set this to your preferred sql database name
   SQLADMIN_LOGIN: ${{ secrets.SQLADMIN_LOGIN  }}                # Create a secret in your Github repo for the SQL Admin login name you want to use
   SQLADMIN_PASS: ${{ secrets.SQLADMIN_PASS  }}                 # Create a secret in your Github repo for the SQL Admin password you want to use
+  AZURE_WEBAPP_PUBLISH_PROFILE: ${{secrets.AZURE_WEBAPP_PUBLISH_PROFILE }}
   
 jobs:
   build-and-deploy:
