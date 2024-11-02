@@ -1,9 +1,9 @@
 name: Create Azure Resources
 on: 
-    # push:
-    #     paths: 
-    #     - 'ARM/**'
-    #     - '.github/workflows/infraworkflow.yml'
+    push:
+        paths: 
+        - 'ARM/**'
+        - '.github/workflows/infraworkflow.yml'
     workflow_dispatch:
 
 permissions:
@@ -12,7 +12,7 @@ permissions:
 
 env:
     AZURE_SUBSCRIPTION_ID: ${{ secrets.AZURE_SUBSCRIPTION_ID  }}    # set this to your Azure Subscription Id
-    AZURE_RESOURCEGROUP_NAME: tamanna_mid_term                      # set this to your preferred resource group name
+    AZURE_RESOURCEGROUP_NAME: tamanna_mid_term                     # set this to your preferred resource group name
     AZURE_WEBAPP_NAME: demo-webappsql-gh-actions-unique-tamanna                          # set this to your preferred web app name
     ASP_NAME: demo-webappsql-gh-actions
     SQLSERVER_NAME: demo-webappsql-gh-actions-srv-unique-tamanna                          # set this to your preferred sql server name
