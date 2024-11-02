@@ -13,6 +13,7 @@ on:
 env:
   AZURE_WEBAPP_NAME: demo-webappsql-gh-actions-unique-tamanna    # set this to your application's name
   AZURE_WEBAPP_PACKAGE_PATH: '.'      # set this to the path to your web app project, defaults to the repository root
+  ASP_NAME: demo-webappsql-gh-actions
   DOTNET_VERSION: '3.1'           # set this to the dot net version to use
   AZURE_RESOURCEGROUP_NAME: tamanna_mid_term # set this to your preferred resource group name
   SQLSERVER_NAME: demo-webappsql-gh-actions-srv-unique-tamanna                          # set this to your preferred sql server name
